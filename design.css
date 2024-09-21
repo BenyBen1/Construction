@@ -1,0 +1,16 @@
+.header{
+    background-color: rgb(13, 112, 241);
+}
+
+body{
+    
+    background-color: rgb(15, 34, 85);
+}
+
+#footer{
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bolder;
+}
+img:hover{
+    box-shadow: inset;
+}

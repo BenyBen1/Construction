@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/form.css">
+    <title>Brick Construction Company</title>
+  </head>
+  <body> <!-- Add the body tag -->
+    <header>
+      <div class="grid">
+        <section class="section">
+          <h1><b>Fill The Form below</b></h1>
+          <fieldset>
+            <form class="form" action="#action" method="post">
+              <!-- First name -->
+              <label class="fname" for="fname"> First Name:</label><br />
+              <input class="inputfname" type="text" id="fname" name="fname" required /><br />
+
+              <!-- Last name -->
+              <label for="lname"> Last Name:</label><br />
+              <input type="text" id="lname" name="lname" required /><br />
+
+              <!-- Phone number -->
+              <label for="telnumber"> Phone Number:</label><br />
+              <input type="tel" id="telnumber" name="telnumber" required /><br />
+
+              <!-- Email -->
+              <label for="email"> Email:</label><br />
+              <input type="email" id="email" name="email" required /><br />
+
+              <!-- Inquiry -->
+              <label for="Inquiry"> What do you want to inquire about?</label><br />
+              <select id="Inquiry" name="Inquiry">
+                <option value="jobs available">Jobs available</option>
+                <option value="Building with us">Building with us</option>
+                <option value="Financing options">Financing options</option>
+                <option value="Other">Other</option>
+              </select><br />
+
+              <!-- Gender -->
+              <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="Gender" value="Male" />
+                <label for="male"> Male</label><br />
+                <input type="radio" id="female" name="Gender" value="Female" />
+                <label for="female"> Female</label><br />
+                <input type="radio" id="others" name="Gender" value="Other" />
+                <label for="others"> Other</label><br />
+              </fieldset>
+
+              <!-- Submit and Reset buttons -->
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+            </form>
+          </fieldset>
+        </section>
+      </div>
+    </header>
+
+    <footer>
+      <p>&copy; 2024 Brick Construction Company. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.grid{
+    background-color: darkcyan;
+    color: ivory;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+html{
+    background-color: aquamarine;
+}
+
+
+label {
+    font-weight: bold;
+    color: black;
+}
+
+
+input[type="radio"]:checked#male + label {
+    color: blue;
+}
+
+
+input[type="radio"]:checked#female + label {
+    color: pink;
+}
+
+
+input[type="radio"]:checked#others + label {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    color: transparent;
+}

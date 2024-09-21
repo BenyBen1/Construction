@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    background-color: antiquewhite;
+    background-image: url(/cssimage/download.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Company Name Styling */
+#company-name {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border: 2px solid rgb(245, 214, 38);
+    border-radius: 12px;
+    padding: 5px;
+    background-color: burlywood;
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+
+.nav-wrapper {
+    margin-top: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: #e42222af;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+a:visited {
+    color: rgb(226, 128, 43);
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+
+.media-section {
+    opacity: 0.2;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+
+#main-header {
+    background-color: #f4e3c3;
+    border: 2px solid #f9d66b;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about{
+    border: lightskyblue 2px solid;
+    background-color: rgb(225, 235, 245);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: large;
+}
+.design{
+    border: #000 2px solid;
+    background-color: rgba(255, 255, 255, 0.872);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: large;
+}
