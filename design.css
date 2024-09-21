@@ -1,0 +1,50 @@
+.header{
+    background-color: rgba(13, 173, 241, 0.455);
+}
+
+body{
+    
+    background-color: rgba(15, 34, 85, 0.41);
+}
+
+#footer{
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bolder;
+}
+img:hover{
+    box-shadow: inset;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.block{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.navigation{
+    border:rgba(15, 34, 85, 0.41) solid;
+    text-align: bottom;
+    border-radius: 30px;
+    background-color: rgb(9, 9, 9);
+    color: black;
+    font-size: larger;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: rgb(109, 29, 15);
+}
