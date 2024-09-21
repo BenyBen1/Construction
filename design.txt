@@ -8,11 +8,6 @@
   </head>
 
   <body>
-    <div class="navigation">
-      <nav>
-        <a href="index.html">Click here to return to Home page</a>
-      </nav>
-    </div>
     <div class="block">
       <header class="header">
         <h1 class="title">These are the Designs we can do for you</h1>
@@ -93,26 +88,16 @@
               <img
                 src="/public images/Arch-house-front-2.jpg"
                 alt="Completed house front"
-                width="500"
+                width="600"
                 class="completed-image"
               />
               <img
                 src="/public images/done house.jpg"
                 alt="Completed house"
-                width="500"
+                width="600"
                 class="completed-image"
               />
-              <img src="/cssimage/house.jpg" alt="complete house" width="500" />
-              <img
-                src="/cssimage/moderhouse2.jpg"
-                alt="complete house"
-                width="500"
-              />
-              <img
-                src="/cssimage/modernhouse1.jpg"
-                alt="complete house"
-                width="auto"
-              />
+              <img src="/cssimage/house.jpg" alt="complete house" width="auto"
             </div>
           </section>
         </div>
