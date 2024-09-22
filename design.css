@@ -1,10 +1,10 @@
 .header{
-    background-color: rgba(13, 173, 241, 0.455);
+    background-color: rgba(229, 238, 209, 0.455);
 }
 
 body{
     
-    background-color: rgba(15, 34, 85, 0.41);
+    background-color: rgba(214, 230, 180, 0.41);
 }
 
 #footer{
@@ -47,4 +47,10 @@ img:hover{
 
 a:hover{
     color: rgb(109, 29, 15);
+}
+table{
+    border-collapse: collapse;
+    border: 3px solid black;
+    background-color: cornflowerblue;
+    font-size: large;
 }
