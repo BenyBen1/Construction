@@ -11,65 +11,56 @@
     <title>Brick Construction Company</title>
   </head>
   <body>
-    <!--Body contents below -->
+    <!-- Header Section -->
     <header id="main-header" class="header">
       <h1 id="company-name">
         Welcome to <strong>Brick Construction Company LTD</strong>
       </h1>
-      <div id="navigation" class="nav-wrapper">
-        <nav>
-          <ol class="nav-list">
-            <li class="about">
-              <a href="about.html"
-                >Visit about us
-                <i
-                  class="fa-solid fa-briefcase fa-lg"
-                  style="color: rgb(39, 67, 206)"
-                ></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="design.html"> Check out our designs
-                <i class="fa-solid fa-hammer-brush fa-lg" style="color: #1410da;"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="Inquiry.html">Write to inquire from us</a>
-            </li>
-            <li class="nav-item">
-              <a href="Job inquiry.html"
-                >Click here if you want to apply for a job in our company</a
-              >
-            </li>
-          </ol>
-        </nav>
-      </div>
-      <div id="media-section" class="media-content">
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="about.html">About Us <i class="fa-solid fa-briefcase fa-lg"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="design.html">Our Designs <i class="fa-solid fa-hammer-brush fa-lg"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="inquiry.html">Inquire</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="section-intro">
+      <h2>Building a Better Future</h2>
+      <p>
+        At Brick Construction Company, we build world-class infrastructures with
+        innovation and dedication.
+      </p>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media-section" class="section-media">
+      <div class="media-content">
         <img
           src="/public images/360_F_340318333_ArLTVJoVxJySDiI3tJYebFlcQknNYOlZ.jpg"
           alt="Company logo"
           id="company-logo"
-          class="company-logo"
-          width="600"
-          height="600"
+          class="media-item"
         />
         <video
           id="company-video"
-          class="company-video"
-          width="500"
-          height="500"
+          class="media-item"
           controls
         >
           <source src="/public_video/home page video.mp4" type="video/mp4" />
         </video>
       </div>
-      <section id="main-section">
-        <h2 id="global-projects">
-          We have built and supervised many buildings across the globe
-        </h2>
-      </section>
-    </header>
+    </section>
 
+    <!-- Services Section -->
+    
     <section id="services-section">
       <div id="services-wrapper">
         <h2 id="services-title"><span class="service-head">Our Services</h2></span>
@@ -123,12 +114,18 @@
             </tr>
           </tbody>
         </table>
-      </div>
     </section>
 
-    <footer id="main-footer">
-      <div id="footer-content">
+
+    <!-- Footer Section -->
+    <footer id="main-footer" class="footer">
+      <div class="footer-content">
         <p>&copy; 2024 Brick Construction Company. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="Inquiry.html">Contact Us</a></li>
+        </ul>
       </div>
     </footer>
   </body>

@@ -1,11 +1,11 @@
 .grid{
-    background-color: darkcyan;
-    color: ivory;
+    background-color: rgba(231, 244, 179, 0.575);
+    color: rgb(143, 68, 249);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
 }
 html{
-    background-color: aquamarine;
+    background-color: rgb(235, 252, 189);
 }
 
 
@@ -31,22 +31,21 @@ input[type="radio"]:checked#others + label {
     color: transparent;
 }
 
-span{
-    border: 2px solid rgb(8, 9, 9);
-    background-color: black;
-    color: rgb(237, 237, 238);
-}
 
-a:visited{
-    color: lime;
-}
 
 a:hover{
     color: red;
 }
 
 .navigation{
-    background-color: rgb(0, 0, 0);
     color: antiquewhite;
+    border: solid 3px black;
+    border-radius: 40px 20px;
     width: 20%;
+}
+
+footer{
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(208, 233, 165);
 }

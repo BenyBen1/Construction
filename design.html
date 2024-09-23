@@ -8,121 +8,80 @@
   </head>
 
   <body>
-    <div class="navigation">
-      <nav>
-        <a href="index.html">Click here to return to Home page</a>
+    <header id="main-header" class="header">
+      <h1>Building Designs</h1>
+      <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="inquiry.html">Inquiry</a>
       </nav>
-    </div>
-    <div class="block">
-      <header class="header">
-        <h1 class="title">These are the Designs we can do for you</h1>
-        <div class="media-section">
-          <div class="/cssimage/modernhouuse1">
+    </header>
+
+    <main>
+      <section id="designs-section">
+        <h2>Our Available Designs</h2>
+        <div class="design-grid">
+          <div class="design-item">
             <img
               src="/public images/bungalow.jpg"
-              alt="Bungalow house"
-              width="600"
-              height="500"
+              alt="Bungalow Design"
               class="design-image"
             />
-            <video class="design-video" width="600" height="500" controls>
-              <source
-                src="/public_video/2836031-sd_640_360_24fps.mp4"
-                type="video/mp4"
-              />
-              <!-- Fallback message for unsupported browsers -->
-              Your browser does not support the video tag.
-            </video>
+            <p>Bungalow Design</p>
           </div>
+          <div class="design-item">
+            <img
+              src="/cssimage/moderhouse2.jpg"
+              alt="Modern House Design"
+              class="design-image"
+            />
+            <p>Modern House</p>
+          </div>
+          <div class="design-item">
+            <img
+              src="/cssimage/house.jpg"
+              alt="Completed House"
+              class="design-image"
+            />
+            <p>Completed Project</p>
+          </div>
+          <!-- Add more design items as needed -->
         </div>
+      </section>
 
-        <div class="block">
-          <section id="bungalow-house-design" class="design-details">
-            <legend class="design-legend">Pros and cons of This design</legend>
-            <table border="1" cellpadding="10" class="design-table">
-              <thead>
-                <caption class="table-caption">
-                  <b>Bungalow</b>
-                </caption>
-                <tr class="table-header" bgcolor="lightgrey">
-                  <th>Aspect</th>
-                  <th>Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="table-row">
-                  <td>Starting Cost</td>
-                  <td>
-                    Starts from 1,200,000 million Kenya shillings depending on
-                    location and materials
-                  </td>
-                </tr>
-                <tr class="table-row">
-                  <td>Advantage</td>
-                  <td>
-                    Easy to maintain and suitable for families with young
-                    children
-                  </td>
-                </tr>
-                <tr class="table-row">
-                  <td>Disadvantage</td>
-                  <td>Requires more land compared to multi-story houses</td>
-                </tr>
-                <tr class="table-row">
-                  <td>Building Time</td>
-                  <td>Typically takes 6-8 months to complete</td>
-                </tr>
-                <tr class="table-row">
-                  <td>Customization</td>
-                  <td>
-                    Offers flexibility in design and layout due to single-story
-                    structure
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </div>
+      <section id="pros-cons-section">
+        <h2>Bungalow Design: Pros and Cons</h2>
+        <table id="pros-cons-table">
+          <thead>
+            <tr>
+              <th>Aspect</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Starting Cost</td>
+              <td>Starts from 1,200,000 KES</td>
+            </tr>
+            <tr>
+              <td>Advantage</td>
+              <td>Easy to maintain, family-friendly</td>
+            </tr>
+            <tr>
+              <td>Disadvantage</td>
+              <td>Requires more land space</td>
+            </tr>
+            <tr>
+              <td>Building Time</td>
+              <td>6-8 months</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
 
-        <div class="block">
-          <section class="completed-houses">
-            <h2 class="completed-title">
-              Here is a gallery of some of our built houses
-            </h2>
-            <div class="completed-gallery">
-              <img
-                src="/public images/Arch-house-front-2.jpg"
-                alt="Completed house front"
-                width="500"
-                class="completed-image"
-              />
-              <img
-                src="/public images/done house.jpg"
-                alt="Completed house"
-                width="500"
-                class="completed-image"
-              />
-              <img src="/cssimage/house.jpg" alt="complete house" width="500" />
-              <img
-                src="/cssimage/moderhouse2.jpg"
-                alt="complete house"
-                width="500"
-              />
-              <img
-                src="/cssimage/modernhouse1.jpg"
-                alt="complete house"
-                width="500"
-              />
-            </div>
-          </section>
-        </div>
-      </header>
-    </div>
-
-    <div id="footer">
-      <footer class="footer">
-        <p>&copy; 2024 Brick Construction Company. All rights reserved.</p>
-      </footer>
-    </div>
+    <footer id="main-footer">
+      <p>&copy; 2024 Brick Construction Company. All rights reserved.</p>
+    </footer>
   </body>
 </html>
