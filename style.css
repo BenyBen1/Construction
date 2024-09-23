@@ -53,7 +53,7 @@ a:visited {
 }
 
 a:hover {
-    color: chartreuse;
+    color: rgb(32, 131, 244);
 }
 
 
@@ -123,3 +123,4 @@ th, td {
     padding: 5px;
     background-color: coral;
 }
+
