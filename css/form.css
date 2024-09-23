@@ -36,12 +36,21 @@ input[type="radio"]:checked#others + label {
 a:hover{
     color: red;
 }
+a{
+    color: rgb(253, 250, 246);
+}
 
 .navigation{
     color: antiquewhite;
     border: solid 3px black;
+    background-color: #0f2255;
     border-radius: 40px 20px;
     width: 20%;
+}
+.nav-bar{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
 }
 
 footer{

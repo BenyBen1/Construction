@@ -123,18 +123,51 @@ section h2 {
   color: #444;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-}
 
-footer p {
-  margin: 0;
-}
 
 .top-section {
   background-color: rgb(237, 250, 184);
 }
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-media {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media li {
+  margin: 0 15px;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #ff9800;
+}
+
+.social-media i {
+  margin-right: 8px;
+}
+

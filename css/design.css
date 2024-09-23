@@ -93,12 +93,45 @@ h2 {
   background-color: rgba(229, 238, 209, 0.8);
 }
 
-#main-footer {
-  background-color: #0f2255;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .social-media {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media li {
+    margin: 0 15px;
+  }
+  
+  .social-media a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #ff9800;
+  }
+  
+  .social-media i {
+    margin-right: 8px;
+  }
+  
