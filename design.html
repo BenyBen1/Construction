@@ -4,93 +4,149 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Building Designs Offered</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/design.css" />
   </head>
 
   <body>
-    <header id="main-header" class="header">
-      <h1>Building Designs</h1>
-      <nav class="nav-bar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="inquiry.html">Inquiry</a>
+    <header id="main-header" class="bg-primary text-white p-3">
+      <h1 class="text-center">Building Designs</h1>
+      <nav class="nav-bar d-flex justify-content-center">
+        <a href="index.html" class="nav-link text-white">Home</a>
+        <a href="about.html" class="nav-link text-white">About Us</a>
+        <a href="inquiry.html" class="nav-link text-white">Inquiry</a>
       </nav>
     </header>
 
-    <main>
+    <main class="container mt-4">
+      <!-- Design Section with Bootstrap Cards -->
       <section id="designs-section">
-        <h2>Our Available Designs</h2>
-        <div class="design-grid">
-          <div class="design-item">
-            <img
-              src="/public images/bungalow.jpg"
-              alt="Bungalow Design"
-              class="design-image"
-            />
-            <p>Bungalow Design</p>
+        <h2 class="text-center">Our Available Designs</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/public-images/bungalow.jpg"
+                class="card-img-top"
+                alt="Bungalow Design"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bungalow Design</h5>
+              </div>
+            </div>
           </div>
-          <div class="design-item">
-            <img
-              src="/cssimage/moderhouse2.jpg"
-              alt="Modern House Design"
-              class="design-image"
-            />
-            <p>Modern House</p>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/cssimage/moderhouse2.jpg"
+                class="card-img-top"
+                alt="Modern House Design"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Modern House</h5>
+              </div>
+            </div>
           </div>
-          <div class="design-item">
-            <img
-              src="/cssimage/house.jpg"
-              alt="Completed House"
-              class="design-image"
-            />
-            <p>Completed Project</p>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/cssimage/house.jpg"
+                class="card-img-top"
+                alt="Completed House"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Completed Project</h5>
+              </div>
+            </div>
           </div>
-          <!-- Add more design items as needed -->
         </div>
       </section>
 
-      <section id="pros-cons-section">
-        <h2>Bungalow Design: Pros and Cons</h2>
-        <table id="pros-cons-table">
+      <!-- Bungalow Features Section -->
+      <section id="pros-cons-section" class="mt-5">
+        <h2 class="text-center">Bungalow Design: Features</h2>
+        <table class="table table-striped">
           <thead>
             <tr>
-              <th>Aspect</th>
-              <th>Details</th>
+              <th>Feature</th>
+              <th>Description</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Starting Cost</td>
-              <td>Starts from 1,200,000 KES</td>
+              <td>Single-story layout</td>
+              <td>All rooms are located on one floor, making it convenient for families and the elderly.</td>
             </tr>
             <tr>
-              <td>Advantage</td>
-              <td>Easy to maintain, family-friendly</td>
+              <td>Open floor plan</td>
+              <td>Offers a spacious feel with living, dining, and kitchen areas interconnected.</td>
             </tr>
             <tr>
-              <td>Disadvantage</td>
-              <td>Requires more land space</td>
+              <td>Low-pitched roof</td>
+              <td>Bungalows typically feature a low-pitched roof for a sleek, modern look.</td>
             </tr>
             <tr>
-              <td>Building Time</td>
-              <td>6-8 months</td>
+              <td>Large windows</td>
+              <td>Maximizes natural light and offers expansive views of the surroundings.</td>
+            </tr>
+            <tr>
+              <td>Front porch</td>
+              <td>Often includes a large, welcoming front porch, ideal for outdoor relaxation.</td>
+            </tr>
+            <tr>
+              <td>Wide eaves</td>
+              <td>Extends beyond the walls, providing extra protection from the elements.</td>
+            </tr>
+            <tr>
+              <td>Built-in storage</td>
+              <td>Efficient use of space with built-in cabinets and storage areas.</td>
+            </tr>
+            <tr>
+              <td>Accessibility</td>
+              <td>With no stairs, bungalows are accessible for people with mobility issues.</td>
+            </tr>
+            <tr>
+              <td>Energy efficiency</td>
+              <td>Due to their size and layout, bungalows are easier and cheaper to heat and cool.</td>
+            </tr>
+            <tr>
+              <td>Outdoor connection</td>
+              <td>Bungalows often have large yards, creating a seamless indoor-outdoor living experience.</td>
             </tr>
           </tbody>
         </table>
       </section>
+
+
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white p-3 text-center mt-5">
       <div class="footer-content">
         <p>&copy; 2024 Brick Construction Company. All rights reserved.</p>
-        <ul class="social-media">
-          <li><a href="https://fakebook.com/brickconstruction" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-          <li><a href="https://twitter.com/brickconstruction" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-          <li><a href="https://instagram.com/brickconstruction" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-          <li><a href="https://linkedin.com/brickconstruction" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="https://fakebook.com/brickconstruction" target="_blank" class="text-white">Facebook</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/brickconstruction" target="_blank" class="text-white">Twitter</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://instagram.com/brickconstruction" target="_blank" class="text-white">Instagram</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/brickconstruction" target="_blank" class="text-white">LinkedIn</a>
+          </li>
         </ul>
       </div>
     </footer>
-    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/809d077f7a.js"
@@ -12,121 +17,141 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header id="main-header" class="header">
-      <h1 id="company-name">
-        Welcome to <strong>Brick Construction Company LTD</strong>
-      </h1>
-      <nav class="nav-bar">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="about.html">About Us <i class="fa-solid fa-briefcase fa-lg"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="design.html">Our Designs <i class="fa-solid fa-hammer-brush fa-lg"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="inquiry.html">Inquire</a>
-          </li>
-        </ul>
-      </nav>
+    <header id="main-header" class="bg-dark text-white p-3">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-6">
+            <h1 class="display-4">Brick Construction Company LTD</h1>
+            <p class="lead">Building Your Vision Into Reality</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-end">
+            <nav class="nav justify-content-center">
+              <a href="about.html" class="nav-link text-white">
+                About Us <i class="fa-solid fa-briefcase fa-lg"></i>
+              </a>
+              <a href="design.html" class="nav-link text-white">
+                Our Designs <i class="fa-solid fa-hammer fa-lg"></i>
+              </a>
+              <a href="inquiry.html" class="nav-link text-white">Inquire</a>
+            </nav>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <!-- Introduction Section -->
-    <section id="introduction" class="section-intro">
-      <h2>Building a Better Future</h2>
-      <p>
-        At Brick Construction Company, we build world-class infrastructures with
-        innovation and dedication.
-      </p>
-    </section>
-
-    <!-- Media Section -->
-    <section id="media-section" class="section-media">
-      <div class="media-content">
-        <img
-          src="/public images/360_F_340318333_ArLTVJoVxJySDiI3tJYebFlcQknNYOlZ.jpg"
-          alt="Company logo"
-          id="company-logo"
-          class="media-item"
-        />
-        <video
-          id="company-video"
-          class="media-item"
-          controls
-        >
-          <source src="/public_video/home page video.mp4" type="video/mp4" />
-        </video>
+    <!-- Hero Section -->
+    <section id="hero" class="text-center bg-light py-5">
+      <div class="container">
+        <h2 class="display-5">Building a Better Future with Quality & Precision</h2>
+        <p class="lead">
+          At Brick Construction Company, we create world-class infrastructure solutions for residential, commercial, and industrial projects.
+        </p>
+        <a href="inquiry.html" class="btn btn-primary btn-lg mt-3">Get a Free Quote</a>
       </div>
     </section>
 
     <!-- Services Section -->
-    
-    <section id="services-section">
-      <div id="services-wrapper">
-        <h2 id="services-title"><span class="service-head">Our Services</h2></span>
-        <table
-          id="services-table"
-          class="table-services"
-          border="1"
-          cellpadding="5"
-        >
-          <thead>
-            <tr>
-              <th class="table-header">Service</th>
-              <th class="table-header">Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="service-name">Residential Construction</td>
-              <td class="service-description">
-                We build custom homes tailored to our clients' needs and
-                budgets.
-              </td>
-            </tr>
-            <tr>
-              <td class="service-name">Commercial Building Projects</td>
-              <td class="service-description">
-                From office complexes to retail spaces, we deliver top-quality
-                commercial properties.
-              </td>
-            </tr>
-            <tr>
-              <td class="service-name">Renovation and Remodeling</td>
-              <td class="service-description">
-                We offer full-scale renovation services to modernize existing
-                buildings.
-              </td>
-            </tr>
-            <tr>
-              <td class="service-name">Architectural Design</td>
-              <td class="service-description">
-                Our in-house architects design innovative and sustainable
-                building solutions.
-              </td>
-            </tr>
-            <tr>
-              <td class="service-name">Construction Management</td>
-              <td class="service-description">
-                We provide full project management services, ensuring timely and
-                cost-effective completion.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="fa-solid fa-house fa-3x mb-3"></i>
+                <h5 class="card-title">Residential Construction</h5>
+                <p class="card-text">
+                  Custom homes designed to your specifications, ensuring luxury, comfort, and durability.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="fa-solid fa-building fa-3x mb-3"></i>
+                <h5 class="card-title">Commercial Construction</h5>
+                <p class="card-text">
+                  From office buildings to retail spaces, we provide top-notch commercial building services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <i class="fa-solid fa-gear fa-3x mb-3"></i>
+                <h5 class="card-title">Renovation & Remodeling</h5>
+                <p class="card-text">
+                  Breathe new life into old spaces with our full-scale renovation and remodeling services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- Media Section -->
+    <section id="media" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="/public-images/360_F_340318333_ArLTVJoVxJySDiI3tJYebFlcQknNYOlZ.jpg"
+              alt="Company logo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6">
+            <video controls class="w-100">
+              <source src="/public_video/home page video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">What Our Clients Say</h2>
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <blockquote class="blockquote">
+              <p>"Brick Construction transformed our home beyond our wildest dreams!"</p>
+              <footer class="blockquote-footer">Jane Doe</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4 mb-4">
+            <blockquote class="blockquote">
+              <p>"Their professionalism and attention to detail made our project seamless."</p>
+              <footer class="blockquote-footer">John Smith</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4 mb-4">
+            <blockquote class="blockquote">
+              <p>"Reliable and top quality from start to finish."</p>
+              <footer class="blockquote-footer">Sarah Williams</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer Section -->
-    <footer id="main-footer" class="footer">
-      <div class="footer-content">
+    <footer id="main-footer" class="bg-dark text-white py-4">
+      <div class="container text-center">
         <p>&copy; 2024 Brick Construction Company. All rights reserved.</p>
-        <ul class="footer-links">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="Inquiry.html">Contact Us</a></li>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+          <li class="list-inline-item"><a href="inquiry.html" class="text-white">Contact Us</a></li>
         </ul>
       </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
