@@ -1,27 +1,27 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: rgb(237, 250, 184); /* Matches the background of index.css */
+  background-color: rgb(237, 250, 184);
   margin: 0;
   padding: 0;
   color: #333;
 }
 
 .header {
-  background-color: rgb(228, 238, 167); /* Similar header background color */
+  background-color: rgb(228, 238, 167);
   text-align: center;
   padding: 20px;
 }
 
 h1,
 h2 {
-  color: #0f2255; /* Deep blue color for headers */
+  color: #fcfdff;
 }
 
 .nav-bar {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: #0f2255; /* Dark blue background for nav-bar */
+  background-color: #0f2255;
   padding: 10px;
   border-radius: 5px;
 }
@@ -33,7 +33,7 @@ h2 {
 }
 
 .nav-bar a:hover {
-  color: rgb(109, 29, 15); /* Darker reddish hover color */
+  color: rgb(255, 165, 0);
 }
 
 #designs-section {
@@ -49,9 +49,9 @@ h2 {
 }
 
 .design-item {
-  background-color: rgba(228, 238, 167, 0.9); /* Lighter matching background */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 15px;
-  border: 2px solid #333;
+  border: 2px solid #0f2255;
   border-radius: 10px;
 }
 
@@ -78,18 +78,18 @@ h2 {
 
 #pros-cons-table th,
 #pros-cons-table td {
-  border: 1px solid #333;
+  border: 1px solid #0f2255;
   padding: 10px;
   text-align: left;
 }
 
 #pros-cons-table th {
-  background-color: #0f2255; /* Dark blue background for table headers */
+  background-color: #0f2255;
   color: white;
 }
 
 #pros-cons-table td {
-  background-color: rgba(228, 238, 167, 0.8); /* Matching table cell background */
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 footer {
@@ -127,7 +127,7 @@ footer {
 }
 
 .social-media a:hover {
-  color: #ff9800; /* Orange hover color for social media links */
+  color: #ff9800;
 }
 
 .social-media i {
