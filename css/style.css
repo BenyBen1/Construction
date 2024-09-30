@@ -16,6 +16,7 @@ header {
   padding: 20px;
   text-align: center;
   border-bottom: 2px solid #f9d66b;
+  text-shadow: #333 2px 3px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
