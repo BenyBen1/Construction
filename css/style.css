@@ -1,21 +1,20 @@
-/* Global Styles */
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  background-color: rgb(237, 250, 184);
+  background-color: #dadada;
   color: #333;
   line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-  background-color: rgb(237, 250, 184);
+  background-color: #dadada;
   padding: 20px;
   text-align: center;
-  border-bottom: 2px solid #f9d66b;
+  border-bottom: 2px solid #dadada;
   text-shadow: #333 2px 3px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
