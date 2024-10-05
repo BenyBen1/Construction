@@ -1,0 +1,239 @@
+// Variables
+$bg-color: #dadada;
+$primary-color: #333;
+$secondary-color: rgb(239, 237, 246);
+$highlight-color: #ffd700;
+$header-shadow: rgba(0, 0, 0, 0.1);
+$media-shadow: rgba(0, 0, 0, 0.1);
+$service-bg: darkgoldenrod;
+
+// Mixin for box-shadow
+@mixin box-shadow($shadow-color) {
+  box-shadow: 0 4px 6px $shadow-color;
+}
+
+// Global styles
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: $bg-color;
+  color: $primary-color;
+  line-height: 1.6;
+}
+
+// Header Styles
+header {
+  background-color: $bg-color;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid $bg-color;
+  text-shadow: $primary-color 2px 3px;
+  @include box-shadow($header-shadow);
+
+  #company-name {
+    font-size: 2.8rem;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+  }
+}
+
+// Navigation Bar
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  border-radius: 30px;
+
+  li {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: $secondary-color;
+      font-size: 22px;
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      border-radius: 30px;
+
+      &:hover {
+        background-color: $highlight-color;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+// Section Intro
+.section-intro {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+  @include box-shadow(rgba(0, 0, 0, 0.05));
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+// Media Section
+.section-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  flex-wrap: wrap;
+
+  .media-item {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    @include box-shadow($media-shadow);
+  }
+}
+
+// Services Section
+.section-services {
+  padding: 60px 20px;
+  background-color: #f4e3c3;
+
+  #services-title {
+    font-size: 2.2rem;
+    color: $primary-color;
+    margin-bottom: 40px;
+    border-bottom: 3px solid $service-bg;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  .table-services {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: left;
+    @include box-shadow($header-shadow);
+
+    th,
+    td {
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: $service-bg;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    td {
+      background-color: #fff;
+    }
+
+    .service-name {
+      font-weight: bold;
+      color: $primary-color;
+    }
+  }
+}
+
+// Footer
+.footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+  position: relative;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: $highlight-color;
+        }
+      }
+    }
+  }
+}
+
+// Responsive Adjustments
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  #company-name {
+    font-size: 2rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .section-intro h2 {
+    font-size: 2rem;
+  }
+
+  .section-services {
+    padding: 40px 20px;
+  }
+
+  .table-services th,
+  .table-services td {
+    padding: 10px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+}

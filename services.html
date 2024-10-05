@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Building Designs & Services</title>
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"/>
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.css"/>
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"/>
     <link rel="stylesheet" href="css/design.css" />
-    <script
-      src="https://kit.fontawesome.com/809d077f7a.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
 
   <body class="bg-light text-dark">
@@ -89,7 +85,7 @@
                   needs and regulatory standards.
                 </p>
 
-                <a href="#" class="btn btn-primary"
+                <a href="#building" class="btn btn-primary"
                   >Click for More information</a
                 >
               </div>
@@ -111,7 +107,7 @@
                   bespoke designs that cater to different family lifestyles and
                   preferences.
                 </p>
-                <a href="#" class="btn btn-primary"
+                <a href="#building" class="btn btn-primary"
                   >Click for More information</a
                 >
               </div>
@@ -135,7 +131,7 @@
                   compliance with all local regulations and industry standards,
                   ensuring both environmental stewardship and community safety.
                 </p>
-                <a href="#" class="btn btn-primary"
+                <a href="#mining" class="btn btn-primary"
                   >Click for More information</a
                 >
               </div>
@@ -157,7 +153,7 @@
                   mining operations, and land development, using industry-best
                   tools and techniques.
                 </p>
-                <a href="#" class="btn btn-primary"
+                <a href="#road" class="btn btn-primary"
                   >Click for More information</a
                 >
               </div>
@@ -167,12 +163,12 @@
       </section>
 
       <section id="info-section" class="mt-5">
-        <h2 class="text-center mb-4">
+        <h2 class="text-center mb-4 text-dark">
           Mining, Building Construction, and Roads
         </h2>
         <div class="row">
           <div class="col-md-4">
-            <h4>Mining</h4>
+            <h4 id="mining">Mining</h4>
             <p>
               Our mining services focus on efficiency and safety, employing
               advanced techniques for mineral extraction and site management. We
@@ -181,7 +177,7 @@
             </p>
           </div>
           <div class="col-md-4">
-            <h4>Building Construction</h4>
+            <h4 id="building">Building Construction</h4>
             <p>
               We offer comprehensive building construction services, from
               initial design to final execution. Our experienced team
@@ -190,7 +186,7 @@
             </p>
           </div>
           <div class="col-md-4">
-            <h4>Road Construction</h4>
+            <h4 id="road">Road Construction</h4>
             <p>
               Our road construction services encompass planning, design, and
               execution of various road projects. We prioritize durability and
@@ -243,6 +239,6 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
