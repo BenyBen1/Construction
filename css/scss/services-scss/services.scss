@@ -1,27 +1,27 @@
+$background: #fcfdff;
+$primary-color: #fcfdff;
+
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: rgb(237, 250, 184);
   margin: 0;
   padding: 0;
-  color: #333;
+  color: $primary-color;
 }
 
 .header {
-  background-color: rgb(228, 238, 167);
   text-align: center;
   padding: 20px;
 }
 
 h1,
 h2 {
-  color: #fcfdff;
+  color: $background;
 }
 
 .nav-bar {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: #0f2255;
   padding: 10px;
   border-radius: 5px;
 }
@@ -133,3 +133,5 @@ footer {
 .social-media i {
   margin-right: 8px;
 }
+
+@import 'servicecards';
